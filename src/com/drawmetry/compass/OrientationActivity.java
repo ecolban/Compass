@@ -108,7 +108,7 @@ public class OrientationActivity extends Activity implements
 					&& azimuthPrime - azimuth > Math.PI) {
 				azimuth += 2 * Math.PI;
 			}
-			azimuth = 0.8F * azimuth + 0.2F * matrixValues[0];
+			azimuth = 0.8F * azimuth + 0.2F * azimuthPrime;
 			// pitch = Math.toDegrees(matrixValues[1]);
 			// roll = Math.toDegrees(matrixValues[2]);
 			int heading = (int) Math.rint(Math.toDegrees(azimuth));
